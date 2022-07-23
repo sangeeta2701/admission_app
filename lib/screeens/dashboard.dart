@@ -30,14 +30,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
         child: currentScreen,
         bucket: bucket,
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   child: Icon(
-      //     Icons.add,
-      //     color: Colors.cyan,
-      //   ),
-      //   onPressed: () {},
-      // ),
-      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         //   shape: CircularNotchedRectangle(),
         //   notchMargin: 10,

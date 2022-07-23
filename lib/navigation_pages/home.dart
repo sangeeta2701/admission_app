@@ -60,18 +60,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-// Swiper imageSlider(context) {
-//   return Swiper(
-//     itemCount: 10,
-//     viewportFraction: 0.7,
-//     scale: 0.8,
-//     autoplay: true,
-//     itemBuilder: (BuildContext context, int index) {
-//       return Image.network(
-//         "https://images.shiksha.com/mediadata/images/1533294008php0E9psI.png",
-//         fit: BoxFit.cover,
-//       );
-//     },
-//   );
-// }
