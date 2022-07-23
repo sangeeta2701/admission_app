@@ -1,7 +1,8 @@
 import 'package:admission/screeens/navbar.dart';
+import 'package:admission/screeens/slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+// import 'package:flutter_swiper/flutter_swiper.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -35,10 +36,11 @@ class _HomeScreenState extends State<HomeScreen> {
             foregroundDecoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15.0),
             ),
-            child: imageSlider(context),
+            child: ImageSlider(),
+            // child: imageSlider(context),
           ),
           SizedBox(
-            height: 25,
+            height: 15,
           ),
           Align(
             alignment: Alignment.centerLeft,
@@ -59,17 +61,17 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-Swiper imageSlider(context) {
-  return Swiper(
-    itemCount: 10,
-    viewportFraction: 0.7,
-    scale: 0.8,
-    autoplay: true,
-    itemBuilder: (BuildContext context, int index) {
-      return Image.network(
-        "https://images.shiksha.com/mediadata/images/1533294008php0E9psI.png",
-        fit: BoxFit.cover,
-      );
-    },
-  );
-}
+// Swiper imageSlider(context) {
+//   return Swiper(
+//     itemCount: 10,
+//     viewportFraction: 0.7,
+//     scale: 0.8,
+//     autoplay: true,
+//     itemBuilder: (BuildContext context, int index) {
+//       return Image.network(
+//         "https://images.shiksha.com/mediadata/images/1533294008php0E9psI.png",
+//         fit: BoxFit.cover,
+//       );
+//     },
+//   );
+// }
