@@ -42,31 +42,39 @@ class _MyHomePageState extends State<MyHomePage> {
             end: Alignment.bottomCenter,
           ),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Lottie.asset("assets/67934-studyly.json"),
-            SizedBox(
-              height: 15,
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.blue.shade700,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Lottie.asset("assets/67934-studyly.json"),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            "Stay curious,keep learning",
+            style: TextStyle(
+                fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+          Text(
+            "keep growing",
+            style: TextStyle(
+                fontSize: 25, color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+          ElevatedButton(
+            child: Text("Let's go....."),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SignUpScreen(),
                 ),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              primary: Color.fromRGBO(35, 41, 122, 1),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SignUpScreen()));
-              },
-              child: Text(
-                "Let's Go",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-              ),
-            )
-          ],
-        ),
+            ),
+          ),
+        ]),
       ),
     );
   }
