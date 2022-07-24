@@ -59,13 +59,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Icon(
                             Icons.home,
                             size: 30,
-                            color: currentTab == 0 ? Colors.cyan : Colors.grey,
+                            color: currentTab == 0
+                                ? Color.fromRGBO(35, 41, 122, 1)
+                                : Colors.grey,
                           ),
                           Text(
                             "Home",
                             style: TextStyle(
-                              color:
-                                  currentTab == 0 ? Colors.cyan : Colors.grey,
+                              color: currentTab == 0
+                                  ? Color.fromRGBO(35, 41, 122, 1)
+                                  : Colors.grey,
                             ),
                           )
                         ],
@@ -88,13 +91,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Icon(
                             Icons.person,
                             size: 30,
-                            color: currentTab == 1 ? Colors.cyan : Colors.grey,
+                            color: currentTab == 1
+                                ? Color.fromRGBO(35, 41, 122, 1)
+                                : Colors.grey,
                           ),
                           Text(
                             "Profile",
                             style: TextStyle(
-                              color:
-                                  currentTab == 1 ? Colors.cyan : Colors.grey,
+                              color: currentTab == 1
+                                  ? Color.fromRGBO(35, 41, 122, 1)
+                                  : Colors.grey,
                             ),
                           )
                         ],
@@ -117,13 +123,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Icon(
                             Icons.settings,
                             size: 30,
-                            color: currentTab == 2 ? Colors.cyan : Colors.grey,
+                            color: currentTab == 2
+                                ? Color.fromRGBO(35, 41, 122, 1)
+                                : Colors.grey,
                           ),
                           Text(
                             "Settings",
                             style: TextStyle(
-                              color:
-                                  currentTab == 2 ? Colors.cyan : Colors.grey,
+                              color: currentTab == 2
+                                  ? Color.fromRGBO(35, 41, 122, 1)
+                                  : Colors.grey,
                             ),
                           )
                         ],
@@ -146,13 +155,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Icon(
                             Icons.notifications,
                             size: 30,
-                            color: currentTab == 3 ? Colors.cyan : Colors.grey,
+                            color: currentTab == 3
+                                ? Color.fromRGBO(35, 41, 122, 1)
+                                : Colors.grey,
                           ),
                           Text(
                             "Notification",
                             style: TextStyle(
-                              color:
-                                  currentTab == 3 ? Colors.cyan : Colors.grey,
+                              color: currentTab == 3
+                                  ? Color.fromRGBO(35, 41, 122, 1)
+                                  : Colors.grey,
                             ),
                           )
                         ],

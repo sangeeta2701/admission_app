@@ -1,8 +1,6 @@
-import 'package:admission/screeens/navbar.dart';
+import 'package:admission/screeens/drawer.dart';
 import 'package:admission/screeens/slider.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_swiper/flutter_swiper.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -17,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       drawer: NavBar(),
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Color.fromRGBO(35, 41, 122, 1),
         // title: Align(
         //     alignment: Alignment.center,
         //     child: Text(

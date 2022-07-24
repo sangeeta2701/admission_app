@@ -12,10 +12,10 @@ class NavBar extends StatelessWidget {
           UserAccountsDrawerHeader(
               accountName: Text(
                 "ABC",
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(color: Colors.white),
               ),
               accountEmail:
-                  Text("abc@gmail.com", style: TextStyle(color: Colors.black)),
+                  Text("abc@gmail.com", style: TextStyle(color: Colors.white)),
               currentAccountPicture: CircleAvatar(
                 child: ClipOval(
                   child: Image.network(
@@ -27,7 +27,7 @@ class NavBar extends StatelessWidget {
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.cyan,
+                color: Color.fromRGBO(35, 41, 122, 1),
               )),
           ListTile(
             leading: Icon(

@@ -14,9 +14,14 @@ class _LoginPgeState extends State<LoginPge> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("assets/bg2.png"),
-          fit: BoxFit.cover,
+        gradient: LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromRGBO(188, 212, 230, 1),
+            Color.fromRGBO(35, 41, 122, 1),
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
         ),
       ),
       child: Scaffold(
@@ -115,7 +120,7 @@ class _LoginPgeState extends State<LoginPge> {
                               style: TextStyle(
                                   decoration: TextDecoration.underline,
                                   fontSize: 18,
-                                  color: Colors.blue),
+                                  color: Colors.white),
                             ),
                           ),
                         ],
